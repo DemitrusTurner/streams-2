@@ -5,3 +5,4 @@ var Search = {
         res.render('search/index');
     }
 };
+module.exports = Search;
