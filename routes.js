@@ -10,9 +10,10 @@ var Router = {
 
         // About page
         app.get('/about', controllers.About.index);
-        
+
         // Search
         app.get('/search', controllers.Search.index);
+        app.post('/search', controllers.Search.search);
     }
 
 };

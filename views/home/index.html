@@ -1,6 +1,16 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-  <h1>{{ title }}</h1>
-  <p>Welcome to {{ title | escape }}</p>
+ <h1>Welcome to {{ title | escape }}</h1>
+   <p>{{ title }}</p>
+  <div class="btn-group">
+  <a href="#" class="btn btn-default">More Info</a>
+  <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></a>
+  <ul class="dropdown-menu">
+    <li><a href="#">How To Use Streams</a></li>
+    <li><a href="#">Why Streams?</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Contact Developer For Further Questions</a></li>
+  </ul>
+</div>
 {% endblock %}
